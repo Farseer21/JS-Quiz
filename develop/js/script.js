@@ -38,7 +38,8 @@ var submitAnswer2 =function() {
       } else if ( val == "The lowest constant common denominator" ) {
       alert('Answer is correct !');
        }; 
-       else {alert('Answer is wrong');
+       else   
+       {alert('Answer is wrong');
        };
        while (y>5){(y++) 
                  
@@ -124,4 +125,4 @@ var timeinterval = setInterval(updateClock, 1000);
   }
 };
   
-        
+}
