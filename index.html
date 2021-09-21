@@ -8,58 +8,85 @@
     <link rel="stylesheet" href="develop/js/style.css">
 </head>
 <body>
+<Header>
+    <h1> <strong>"JavaScript Quiz"</strong></h1>
 
+<p id="timer"> TIMER </p>
 
-    <p id="demo"> TIMER </p>
+<p>
+    With a timer runnning answer each question using the multiple choices below each question. when you complete all the questions correctly the clock will stop, and you will win!
+    However, each question you answer wrong will take away fron your clock.
 
+    So be careful and good luck!
+</p>
 
-
+</Header>
+<div>
     <h1>JavaScript is ______ Language.</h1><br>
-    <form id="d1">
+ <form id="question1">
     <input type="radio" name="choice" value="Scripting"> Scripting
     <input type="radio" name="choice" value="Programming"> Programming
     <input type="radio" name="choice" value="Application"> Application
     <input type="radio" name="choice" value="None of These"> None of These
     </form>
-    <button onclick="submitAnswer(d1.choice.value, 'Scripting')">Submit Answer</button>
-
-
-
-   <h1 class="frame"> When considering how to              </h1><br>
-<form>
-<input>
-<input>
-<inout>
-<input>
-
-</form>
-
-<h1 class="frame"> When considering how to              </h1><br>
-<form>
-<input>
-<input>
-<inout>
-<input>
+</div>
+ <div>
+    <button id="btn" onclick= "submitAnswer1()">Submit Answer</button>
+</div>
+<div>
+   <h1 class="frame">   What is negative Infinity?            </h1><br>
+<form id="question2">
+   <input type="radio" name="choice" value="The newest star wars film"> The newest star wars film
+   <inout type="radio" name="choice" value="An infinite amount of nothing"> An infinite amount of nothing
+   <input type="radio" name="choice" value=" An infinity Stone"> An infinity Stone
+   <input type="radio" name="choice" value="The lowest constant common denominator">The lowest constant common denominator
 
 </form>
-
-<h1 class="frame"> When considering how to              </h1><br>
-<form>
-<input>
-<input>
-<inout>
-<input>
-
-</form>
-
-<h1 class="frame"> When considering how to              </h1><br>
-<form>
-<input>
-<input>
-<inout>
-<input>
+</div>
+<div>
+   <button id="btn" onclick= "submitAnswer2()";>Submit Answer</button>
+</div>
+<div>
+   <h1 class="frame"> Enumerate the differences between Java and JavaScript?            </h1><br>
+<form id="question3">
+   <input type="radio" name="choice" value="">
+   <input type="radio" name="choice" value="">
+   <input type="radio" name="choice" value="">
+   <input type="radio" name="choice" value="">
 
 </form>
+</div>
+<div>
+   <button id="btn" onclick= "submitAnswer3();"">Submit Answer</button>
+</div>
+<div>
+  <h1 class="frame"> What are JavaScript Data Types?         </h1><br>
+<form id="question4"> 
+  <input type="radio" name="choice" value="DataString"> DataString
+  <input type="radio" name="choice" value="Integers"> Integers
+  <input type="radio" name="choice" value="Buleon"> Buleon
+  <input type="radio" name="choice" value="All of the above"> All of the above
+
+</form>
+</div>
+<div>
+   <button id="btn" onclick= "submitAnswer4();"">Submit Answer</button>
+</div>
+<div>
+  <h1 class="frame">What is the use of isNaN function?            </h1><br>
+<form id="question5">
+  <input type="radio" name="choice" value="">
+  <input type="radio" name="choice" value="">
+  <inout type="radio" name="choice" value="">
+  <input type="radio" name="choice" value="">
+  <input type="radio" name="choice" value="">
+
+</form>
+</div>
+<div>
+   <button id="btn" onclick= "submitAnswer5();"">Submit Answer</button>
+</div>
+
     <script src="develop/js/script.js">
 
 
@@ -67,3 +94,5 @@
     
 </body>
 </html>
+
+
