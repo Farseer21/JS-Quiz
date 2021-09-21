@@ -11,7 +11,16 @@
 <Header>
     <h1> <strong>"JavaScript Quiz"</strong></h1>
 
-<p id="timer"> TIMER </p>
+<h2 id="timer"> TIMER </h2>
+     <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+    </div>
 
 <p>
     With a timer runnning answer each question using the multiple choices below each question. when you complete all the questions correctly the clock will stop, and you will win!
@@ -31,33 +40,33 @@
     </form>
 </div>
  <div>
-    <button id="btn" onclick= "submitAnswer1()">Submit Answer</button>
+    <button id="btn1" onclick= "submitAnswer1()">Submit Answer</button>
 </div>
 <div>
    <h1 class="frame">   What is negative Infinity?            </h1><br>
 <form id="question2">
    <input type="radio" name="choice" value="The newest star wars film"> The newest star wars film
-   <inout type="radio" name="choice" value="An infinite amount of nothing"> An infinite amount of nothing
+   <input type="radio" name="choice" value="An infinite amount of nothing"> An infinite amount of nothing
    <input type="radio" name="choice" value=" An infinity Stone"> An infinity Stone
    <input type="radio" name="choice" value="The lowest constant common denominator">The lowest constant common denominator
 
 </form>
 </div>
 <div>
-   <button id="btn" onclick= "submitAnswer2()";>Submit Answer</button>
+   <button id="btn2" onclick= "submitAnswer2()";>Submit Answer</button>
 </div>
 <div>
-   <h1 class="frame"> Enumerate the differences between Java and JavaScript?            </h1><br>
+   <h1 class="frame"> When linking a Javascript file to an html page what directly preceeds the path?           </h1><br>
 <form id="question3">
-   <input type="radio" name="choice" value="">
-   <input type="radio" name="choice" value="">
-   <input type="radio" name="choice" value="">
-   <input type="radio" name="choice" value="">
+   <input type="radio" name="choice" value="src"> src
+   <input type="radio" name="choice" value="href"> href
+   <input type="radio" name="choice" value="type"> type
+   <input type="radio" name="choice" value="none of the above"> none of the above
 
 </form>
 </div>
 <div>
-   <button id="btn" onclick= "submitAnswer3();"">Submit Answer</button>
+   <button id="btn3" onclick= "submitAnswer3();"">Submit Answer</button>
 </div>
 <div>
   <h1 class="frame"> What are JavaScript Data Types?         </h1><br>
@@ -70,24 +79,23 @@
 </form>
 </div>
 <div>
-   <button id="btn" onclick= "submitAnswer4();"">Submit Answer</button>
+   <button id="btn4" onclick= "submitAnswer4();"">Submit Answer</button>
 </div>
 <div>
   <h1 class="frame">What is the use of isNaN function?            </h1><br>
 <form id="question5">
-  <input type="radio" name="choice" value="">
-  <input type="radio" name="choice" value="">
-  <inout type="radio" name="choice" value="">
-  <input type="radio" name="choice" value="">
-  <input type="radio" name="choice" value="">
+  <input type="radio" name="choice" value="A way to debug code"> A way to debug code
+  <input type="radio" name="choice" value="A way to check for illegal integers"> A way to check for illegal integers
+  <input type="radio" name="choice" value="A way to alter existing integers"> A way to alter existing integers
+  <input type="radio" name="choice" value="A way to add elements"> A way to add elements
 
 </form>
 </div>
 <div>
-   <button id="btn" onclick= "submitAnswer5();"">Submit Answer</button>
+   <button id="btn5" onclick= "submitAnswer5();"">Submit Answer</button>
 </div>
 
-    <script src="develop/js/script.js">
+    <script src="develop/js/script.js" src="jquery-3.6.0.js">
 
 
     </script>
