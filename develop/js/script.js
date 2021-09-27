@@ -22,7 +22,7 @@ const durationInMinutes = 2;
 //  }
 
 
-const questions = [ (x == 1) 
+const questions = [ //(x == 1) 
   {
     question: "JavaScript is ______ Language.",
     id: 1,
@@ -101,12 +101,12 @@ const getNewQuestions= ()=> {
   currentQuestion=availableQuestions[0];
   question.innerText="";
 
-  answers.forEach(answer) => {
+  answers.forEach((answer) => {
     answer.innerText= currentQuestion[answer.dataset["answer"]];
     
   });
 
-  answers.forEach((answer)=>){
+  answers.forEach((answer)=>{
     answer.addEventListener("click",(e) => {
       acceptingAnswers=false;
       const clickedAnswer = e.target;
@@ -114,21 +114,21 @@ const getNewQuestions= ()=> {
       
       let classToApply="incorrect";
 
-      if( answerLetter===currentQuestion.answer)
+      if( answerLetter===currentQuestion.answer) {
          score++;
          scoreText.innerText=score;
          classToApply="correct";
-    }
-    clickedAnswer.parentElement.classlist.add(classToApply)
+      }
+      clickedAnswer.parentElement.classlist.add(classToApply)
 
-    setTimeout(()=> {
-      clickedAnswer.parentElement.classlist.remove(classToApply);
-       getNewQuestion();
-       acceptingAnswers=true;
-    }, 1000);
+      setTimeout(()=> {
+        clickedAnswer.parentElement.classlist.remove(classToApply);
+        getNewQuestion();
+        acceptingAnswers=true;
+      }, 1000);
+      //});
     });
-  });
-  availableQuestions.shift();
+    availableQuestions.shift();
 });
 
 startgame();
